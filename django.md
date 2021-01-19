@@ -62,4 +62,6 @@
         {% endif %}
     ```
 
-15. 
+15. Using generic views:  ListView and DetailView. Respectively, those two views abstract the concepts of “display a list of objects” and “display a detail page for a particular type of object.” (See PR)
+
+16. 
