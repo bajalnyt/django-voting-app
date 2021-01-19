@@ -48,4 +48,18 @@
 
 13. Create different views
 
-14. Use Django template 
+14. Use Django templates like below:
+
+    ```bash
+     {% if latest_question_list %}
+            <ul>
+            {% for question in latest_question_list %}
+                 <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No polls are available.</p>
+        {% endif %}
+    ```
+
+15. 
